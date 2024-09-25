@@ -1,0 +1,200 @@
+﻿Diagnose log at 2024-09-25T10:08:38Z
+
+AppPath: C:\Program Files\Git\mingw64\bin\git-credential-manager
+InstallDir: C:\Program Files\Git\mingw64\bin\
+Version: 2.0.935+8b4735fc7b
+
+------------
+Diagnostic: Environment
+Skipped: False
+Success: True
+Exception: None
+Log:
+OSType: Windows
+OSVersion: 10.0 (build 19045)
+Reading environment variables... OK
+ Variables:
+HOMEPATH=\Users\MAAZ
+DriverData=C:\Windows\System32\Drivers\DriverData
+COMPUTERNAME=DESKTOP-BTNPM91
+MSYSTEM=MINGW64
+CommonProgramFiles(x86)=C:\Program Files (x86)\Common Files
+WINDIR=C:\Windows
+OneDrive=C:\Users\MAAZ\OneDrive
+SESSIONNAME=Console
+CONFIG_SITE=C:/Program Files/Git/etc/config.site
+PROCESSOR_REVISION=3c03
+USERDOMAIN=DESKTOP-BTNPM91
+PATHEXT=.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+ORIGINAL_TEMP=C:/Users/MAAZ/AppData/Local/Temp
+USERNAME=MAAZ
+MINGW_PREFIX=C:/Program Files/Git/mingw64
+GIT_ASKPASS=c:\Users\MAAZ\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass.sh
+ProgramFiles(x86)=C:\Program Files (x86)
+ACLOCAL_PATH=C:\Program Files\Git\mingw64\share\aclocal;C:\Program Files\Git\usr\share\aclocal
+TEMP=C:\Users\MAAZ\AppData\Local\Temp
+LOCALAPPDATA=C:\Users\MAAZ\AppData\Local
+MANPATH=C:\Program Files\Git\mingw64\local\man;C:\Program Files\Git\mingw64\share\man;C:\Program Files\Git\usr\local\man;C:\Program Files\Git\usr\share\man;C:\Program Files\Git\usr\man;C:\Program Files\Git\share\man
+TERM=xterm-256color
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+MSYSTEM_CARCH=x86_64
+PROGRAMFILES=C:\Program Files (x86)
+ProgramData=C:\ProgramData
+TERM_PROGRAM_VERSION=1.93.1
+ORIGINAL_TMP=C:/Users/MAAZ/AppData/Local/Temp
+SYSTEMROOT=C:\Windows
+TERM_PROGRAM=vscode
+PROCESSOR_LEVEL=6
+NUMBER_OF_PROCESSORS=4
+SSH_ASKPASS=C:/Program Files/Git/mingw64/bin/git-askpass.exe
+SHLVL=1
+APPDATA=C:\Users\MAAZ\AppData\Roaming
+PROMPT=$P$G
+VSCODE_GIT_ASKPASS_MAIN=c:\Users\MAAZ\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass-main.js
+PSModulePath=C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+PUBLIC=C:\Users\Public
+VSCODE_GIT_IPC_HANDLE=\\.\pipe\vscode-git-ca7e7f81ed-sock
+HOSTNAME=DESKTOP-BTNPM91
+PKG_CONFIG_PATH=C:\Program Files\Git\mingw64\lib\pkgconfig;C:\Program Files\Git\mingw64\share\pkgconfig
+MSYSTEM_PREFIX=C:/Program Files/Git/mingw64
+CHROME_CRASHPAD_PIPE_NAME=\\.\pipe\crashpad_10256_DXNIHUDZAWMKUPXC
+PLINK_PROTOCOL=ssh
+COLORTERM=truecolor
+ProgramW6432=C:\Program Files
+PATH=C:\Users\MAAZ\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\MAAZ\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\MAAZ\.console-ninja\.bin;C:\Users\MAAZ\AppData\Local\Microsoft\WindowsApps;C:\Users\MAAZ\AppData\Roaming\npm;C:\Users\MAAZ\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+MINGW_CHOST=x86_64-w64-mingw32
+GIT_TRACE2_PARENT_SID=86c583ec-0953-4356-a430-887bde1f351d
+VSCODE_GIT_ASKPASS_EXTRA_ARGS=
+PKG_CONFIG_SYSTEM_LIBRARY_PATH=C:/Program Files/Git/mingw64/lib
+TMPDIR=C:\Users\MAAZ\AppData\Local\Temp
+TMP=C:\Users\MAAZ\AppData\Local\Temp
+ORIGINAL_XDG_CURRENT_DESKTOP=undefined
+SHELL=C:\Program Files\Git\usr\bin\bash.exe
+HOME=C:\Users\MAAZ
+MSYSTEM_CHOST=x86_64-w64-mingw32
+COMSPEC=C:\Windows\system32\cmd.exe
+LOGONSERVER=\\DESKTOP-BTNPM91
+USERPROFILE=C:\Users\MAAZ
+DISPLAY=needs-to-be-defined
+COMMONPROGRAMFILES=C:\Program Files (x86)\Common Files
+VSCODE_GIT_ASKPASS_NODE=C:\Users\MAAZ\AppData\Local\Programs\Microsoft VS Code\Code.exe
+_=C:/Program Files/Git/mingw64/bin/git-credential-manager
+USERDOMAIN_ROAMINGPROFILE=DESKTOP-BTNPM91
+CommonProgramW6432=C:\Program Files\Common Files
+HOMEDRIVE=C:
+INFOPATH=C:\Program Files\Git\mingw64\local\info;C:\Program Files\Git\mingw64\share\info;C:\Program Files\Git\usr\local\info;C:\Program Files\Git\usr\share\info;C:\Program Files\Git\usr\info;C:\Program Files\Git\share\info
+MINGW_PACKAGE_PREFIX=mingw-w64-x86_64
+SYSTEMDRIVE=C:
+PWD=C:/Users/MAAZ/OneDrive/Desktop/Nurain Work/blog-with-next
+EXEPATH=C:\Program Files\Git\bin
+LANG=en_US.UTF-8
+PROCESSOR_ARCHITEW6432=AMD64
+ORIGINAL_PATH=C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\MAAZ\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Users\MAAZ\.console-ninja\.bin;C:\Users\MAAZ\AppData\Local\Microsoft\WindowsApps;C:\Users\MAAZ\AppData\Roaming\npm;C:\Users\MAAZ\AppData\Local\Programs\Microsoft VS Code\bin
+PROCESSOR_ARCHITECTURE=x86
+PS1=\[]633;A\]\[\033]0;$TITLEPREFIX:$PWD\007\]\n\[\033[32m\]\u@\h \[\033[35m\]$MSYSTEM \[\033[33m\]\w\[\033[36m\]`__git_ps1`\[\033[0m\]\n$ \[]633;B\]
+OS=Windows_NT
+PKG_CONFIG_SYSTEM_INCLUDE_PATH=C:/Program Files/Git/mingw64/include
+OneDriveConsumer=C:\Users\MAAZ\OneDrive
+ALLUSERSPROFILE=C:\ProgramData
+
+
+------------
+Diagnostic: File system
+Skipped: False
+Success: True
+Exception: None
+Log:
+Temporary directory is 'C:\Users\MAAZ\AppData\Local\Temp\'...
+Checking basic file I/O...
+Writing to temporary file 'C:\Users\MAAZ\AppData\Local\Temp\203344fa84066b6601bc6f54'... OK
+Reading from temporary file 'C:\Users\MAAZ\AppData\Local\Temp\203344fa84066b6601bc6f54'... OK
+Deleting temporary file 'C:\Users\MAAZ\AppData\Local\Temp\203344fa84066b6601bc6f54'... OK
+Testing IFileSystem instance...
+UserHomePath: C:\Users\MAAZ
+UserDataDirectoryPath: C:\Users\MAAZ\.gcm
+GetCurrentDirectory(): C:\Users\MAAZ\OneDrive\Desktop\Nurain Work\blog-with-next
+
+------------
+Diagnostic: Networking
+Skipped: False
+Success: True
+Exception: None
+Log:
+Checking networking and HTTP stack...
+Creating HTTP client... OK
+IsNetworkAvailable: True
+Sending HEAD request to http://example.com... OK
+Sending HEAD request to https://example.com... OK
+Acquiring free TCP port... OK
+Testing local HTTP loopback connections...
+Creating new HTTP listener for http://localhost:52858/... OK
+Waiting for loopback connection... OK
+Writing response... OK
+Waiting for response data... OK
+Loopback connection data OK
+
+------------
+Diagnostic: Git
+Skipped: False
+Success: True
+Exception: None
+Log:
+Getting Git version... OK
+Git version is '2.40.1.windows.1'
+Locating current repository... OK
+Not inside a Git repository.
+Listing all Git configuration... OK
+Git configuration:
+file:C:/Program Files/Git/etc/gitconfig	diff.astextplain.textconv=astextplain
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.clean=git-lfs clean -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.smudge=git-lfs smudge -- %f
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.process=git-lfs filter-process
+file:C:/Program Files/Git/etc/gitconfig	filter.lfs.required=true
+file:C:/Program Files/Git/etc/gitconfig	http.sslbackend=openssl
+file:C:/Program Files/Git/etc/gitconfig	http.sslcainfo=C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+file:C:/Program Files/Git/etc/gitconfig	core.autocrlf=true
+file:C:/Program Files/Git/etc/gitconfig	core.fscache=true
+file:C:/Program Files/Git/etc/gitconfig	core.symlinks=false
+file:C:/Program Files/Git/etc/gitconfig	pull.rebase=false
+file:C:/Program Files/Git/etc/gitconfig	credential.helper=manager
+file:C:/Program Files/Git/etc/gitconfig	credential.https://dev.azure.com.usehttppath=true
+file:C:/Program Files/Git/etc/gitconfig	init.defaultbranch=master
+file:C:/Users/MAAZ/.gitconfig	user.name=Nurain Ansari
+file:C:/Users/MAAZ/.gitconfig	user.email=nurainansari0932@gmail.com
+
+
+------------
+Diagnostic: Credential storage
+Skipped: False
+Success: True
+Exception: None
+Log:
+ICredentialStore instance is of type: CredentialStore
+Writing test credential... OK
+Reading test credential... OK
+Deleting test credential... OK
+
+------------
+Diagnostic: Microsoft authentication (AAD/MSA)
+Skipped: False
+Success: True
+Exception: None
+Log:
+Broker not supported.
+Flow type is: Auto
+Gathering MSAL token cache data... OK
+CacheDirectory: C:\Users\MAAZ\AppData\Local\.IdentityService
+CacheFileName: msal.cache
+CacheFilePath: C:\Users\MAAZ\AppData\Local\.IdentityService\msal.cache
+Creating cache helper... OK
+Verifying MSAL token cache persistence... OK
+
+------------
+Diagnostic: GitHub API
+Skipped: False
+Success: True
+Exception: None
+Log:
+Using 'https://github.com/' as API target.
+Querying '/meta' endpoint... OK
+
