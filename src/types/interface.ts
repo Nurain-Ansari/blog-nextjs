@@ -22,3 +22,9 @@ export interface GetAllBlogCategories {
   _id: string;
   category: string;
 }
+
+export interface IUploadedImages {
+  id: string;
+  uploaded: boolean;
+  src: string;
+}
