@@ -57,6 +57,8 @@ const PhotoUpload: React.FC<PhotoUploadProps> = ({ onFileChange }) => {
         {preview ? (
           <Image
             src={preview}
+            width={100}
+            height={100}
             alt="Preview"
             className="w-full h-40 object-cover mb-4 rounded-lg"
           />
