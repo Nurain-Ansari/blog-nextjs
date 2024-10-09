@@ -37,15 +37,7 @@ const Editor = ({ setEditorData, editorData }) => {
         setEditorData(content);
       },
       tools: {
-        header: {
-          class: MyHeader,
-          config: {
-            placeholder: "Enter a header",
-            inlineToolbar: true,
-            levels: [1, 2, 3, 4, 5, 6],
-            defaultLevel: 3,
-          },
-        },
+        header: Header,
         underline: Underline,
         image: {
           class: ImageTool,
@@ -92,18 +84,9 @@ const Editor = ({ setEditorData, editorData }) => {
       ejInstance?.current?.destroy();
       ejInstance.current = null;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return (
-    <>
-      {/* <div className="border border-2 rounded-2 p-2 mb-3"> */}
-      <div className="content">
-        <div id="editorjs"></div>
-      </div>
-      {/* </div> */}
-    </>
-  );
+  return <div id="editorjs"></div>;
 };
 
 export default Editor;

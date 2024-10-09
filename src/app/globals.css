@@ -26,3 +26,33 @@ body {
     text-wrap: balance;
   }
 }
+
+body h1 {
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+body h2 {
+  font-size: x-large;
+  font-weight: semi-bold;
+}
+
+body h3 {
+  font-size: large;
+  font-weight: normal;
+}
+
+body h4 {
+  font-size: medium;
+  font-weight: normal;
+}
+
+body h5 {
+  font-size: small;
+  font-weight: lighter;
+}
+
+body h6 {
+  font-size: smaller;
+  font-weight: light;
+}

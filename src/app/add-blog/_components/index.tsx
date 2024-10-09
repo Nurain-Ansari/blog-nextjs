@@ -123,8 +123,6 @@ const Blog = () => {
         return acc;
       }, []) || [];
     hookSetVelue("tags", arr);
-    // hookSetVelue('tags');
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // useEffect(() => {
