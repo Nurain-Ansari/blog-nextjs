@@ -24,6 +24,7 @@ import Modal from "./Modal";
 import { OutputData } from "@editorjs/editorjs";
 
 import dynamic from "next/dynamic";
+import actionFeaturedImage from "@/action/actionImage";
 
 const EditorOld = dynamic(() => import("./Editor.js"), { ssr: false });
 
@@ -60,6 +61,7 @@ const Blog = () => {
   const [value, setValue] = React.useState<OptionType[]>([]);
   const [image, setImage] = useState<null | string>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [loading, setLoading] = useState(false);
 
   const [editorData, setEditorData] = useState<OutputData>({} as OutputData);
   // const [editorMounted, setEditorMounted] = useState(false);
@@ -94,6 +96,7 @@ const Blog = () => {
     handleSubmit,
     register,
     watch,
+    trigger,
     control,
     setValue: hookSetVelue,
     formState: { errors },
@@ -214,6 +217,24 @@ const Blog = () => {
       alert("Please upload an image file");
     }
   };
+
+  useEffect(() => {
+    const handleUpload = async () => {
+      if (image) {
+        setLoading(true);
+        const formData = new FormData();
+        formData.append("file", image);
+        formData.append("folder", "blog");
+        const res = await actionFeaturedImage(formData);
+        if (!!res && !("statusCode" in res)) {
+          hookSetVelue("images", res.url);
+          if (trigger) trigger("images", res.url);
+        }
+        setLoading(false);
+      }
+    };
+    handleUpload();
+  }, [image]);
 
   return (
     <div className="bg-gray-200  h-">
