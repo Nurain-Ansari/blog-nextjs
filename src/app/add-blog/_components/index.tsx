@@ -126,7 +126,7 @@ const Blog = () => {
         return acc;
       }, []) || [];
     hookSetVelue("tags", arr);
-  }, []);
+  }, [value]);
 
   // useEffect(() => {
   //   // setValue('blogDetails', JSON.stringify(editorData));
@@ -136,12 +136,12 @@ const Blog = () => {
   useEffect(() => {
     hookSetVelue("blogDetails", JSON.stringify(editorData));
   }, [editorData]);
-  console.log(watch("blogDetails"));
-
+  
+  
   useEffect(() => {
     hookSetVelue("slug", slugText);
-  }, []);
-
+  }, [slugText]);
+  
   const onSubmit: SubmitHandler<BlogType> = (data) => {
     console.log(data);
   };
@@ -159,7 +159,7 @@ const Blog = () => {
       };
     },
   };
-  const colourStylesCreatable: StylesConfig = {
+const colourStylesCreatable: StylesConfig = {
     control: (styles) => ({
       ...styles,
       minHeight: "56px",
@@ -203,20 +203,23 @@ const Blog = () => {
       handleFiles(files);
     }
   };
-  const handleFiles = (files: FileList) => {
-    const file = files[0];
-    if (file && file.type.startsWith("image/")) {
-      const reader = new FileReader();
-      reader.onload = (e) => {
-        if (e.target && typeof e.target.result === "string") {
-          setImage(e.target.result);
-        }
-      };
-      reader.readAsDataURL(file);
-    } else {
-      alert("Please upload an image file");
-    }
-  };
+
+  // const handleFiles = (files: FileList) => {
+  //   const file = files[0];
+  //   if (file && file.type.startsWith("image/")) {
+  //     const reader = new FileReader();
+  //     reader.onload = (e) => {
+  //       if (e.target && typeof e.target.result === "string") {
+  //         setImage(e.target.result);
+  //       }
+  //     };
+  //     reader.readAsDataURL(file);
+  //   } else {
+  //     alert("Please upload an image file");
+  //   }
+  // };
+
+  console.log(image);
 
   useEffect(() => {
     const handleUpload = async () => {
@@ -226,6 +229,7 @@ const Blog = () => {
         formData.append("file", image);
         formData.append("folder", "blog");
         const res = await actionFeaturedImage(formData);
+        console.log( " response" , res);
         if (!!res && !("statusCode" in res)) {
           hookSetVelue("images", res.url);
           if (trigger) trigger("images", res.url);
@@ -235,6 +239,7 @@ const Blog = () => {
     };
     handleUpload();
   }, [image]);
+  console.log(errors);
 
   return (
     <div className="bg-gray-200  h-">
@@ -384,18 +389,20 @@ const Blog = () => {
               onDrop={handleDrop}
               {...register("images")}
             >
+              
               <Image
                 className="mx-auto min-h-40 min-w-40 w-auto h-auto py-10 xl:py-0"
                 src={uploadIcon}
                 alt="upload-file"
               />
               <p className="text-black text-lg font-medium leading-5 my-2 text-center px-4">
-                Upload/Drag photos of your property
+                Upload/Drag photos for youre Featured Images
               </p>
               <p className="text-black text-lg font-medium leading-5 my-2 text-center px-4">
                 File Type must be image/png, image/jpeg format and at least
                 2048x768
               </p>
+              
 
               <div className="mx-auto my-4">
                 <label
@@ -414,7 +421,11 @@ const Blog = () => {
                 />
               </div>
             </div>
+            {errors?.images?.message && (
+                <p className="text-red-500">Image is required</p>
+              )}
             <div className="h-auto mx-auto flex flex-col justify-center content-center ">
+            
               {image ? (
                 <>
                   <Image
@@ -434,9 +445,7 @@ const Blog = () => {
                   />
                 </>
               ) : null}
-              {errors?.images?.message && (
-                <p className="text-red-500">Image is required</p>
-              )}
+             
             </div>
           </div>
 

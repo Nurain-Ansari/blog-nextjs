@@ -13,7 +13,7 @@ export default async function actionFeaturedImage(
         // Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
-      body: reqData,
+      body: JSON.stringify(reqData),
     }
   );
   const resData = await res.json();

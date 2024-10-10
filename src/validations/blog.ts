@@ -10,7 +10,7 @@ const blogSchema = z.object({
   categories: z.string().min(1, 'Tag should not be empty'),
   images: z
     .array(z.string().min(0, 'Image URL should not be empty'))
-    .min(0, 'At least one image is required'),
+    .min(1, 'At least one image is required'),
   blogDetails: z.string().min(0, 'Description is required'),
 });
 
