@@ -21,7 +21,7 @@ const page = async () => {
                 <RecentCard
                   key={i}
                   author={recentCard.author}
-                  slug={recentCard}
+                  slug={recentCard.slug}
                   title={recentCard.title}
                   tags={recentCard.tags}
                   categories={recentCard.categories}
@@ -43,7 +43,7 @@ const page = async () => {
               <Card
                 key={card._id}
                 author={card.author}
-                slug={card}
+                slug={card.slug}
                 title={card.title}
                 tags={card.tags}
                 categories={card.categories}

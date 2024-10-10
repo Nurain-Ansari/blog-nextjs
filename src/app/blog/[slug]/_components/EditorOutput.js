@@ -1,4 +1,5 @@
 /* eslint-disable no-case-declarations */
+
 import Image from 'next/image';
 import React from 'react';
 
@@ -9,6 +10,7 @@ const EditorOutput = ({ blocks }) => {
 export default EditorOutput;
 
 export function convertDataToHtml(value) {
+    console.log(value);
   if (Array.isArray(value)) {
     return value.map((block, index) => {
       switch (block.type) {
